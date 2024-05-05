@@ -1,0 +1,87 @@
+#status_bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.status_bar_column {
+  display: flex;
+  width: 33%;
+}
+
+.status_bar_no {
+  margin: 0px 10px;
+}
+
+.status_bar_column:nth-child(2) {
+  justify-content: center;
+}
+
+.status_bar_column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.status_bar_column:last-child i {
+  margin: 0px 5px;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.welcome_text {
+  margin-top: 120px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.welcome_text2 {
+  width: 50%;
+  color: gray;
+  margin-bottom: 50px;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login input:focus {
+  outline: none;
+}
+
+#login input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login input:focus {
+  border-color: #ffee05f6;
+}
+
+#login input[type="submit"] {
+  background-color: #ffee05f6;
+  cursor: pointer;
+}
+
+#login a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+}
